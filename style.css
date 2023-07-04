@@ -1,0 +1,10 @@
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: white;
+    font-size: 5rem;
+    font-family: "Space Mono", monospace;
+}

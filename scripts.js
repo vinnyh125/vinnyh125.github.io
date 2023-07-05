@@ -21,7 +21,7 @@ document.getElementById("english-name").onmouseover = event => {
     
     if(iteration >= event.target.dataset.value.length){ 
       clearInterval(interval);
-      document.getElementById("chinese-name").style.opacity = "0.5";
+      document.getElementById("chinese-name").style.opacity = "0.35";
       document.getElementById("chinese-name").style.transition = "opacity 3s";
     }
     

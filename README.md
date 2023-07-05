@@ -7,6 +7,7 @@ Welcome to my GitHub Pages website! This website showcases my projects and provi
 - [About](#about)
 - [Projects](#projects)
 - [Usage](#usage)
+- [Contant](#contact)
 
 ## About
 

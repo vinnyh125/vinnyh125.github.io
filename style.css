@@ -40,3 +40,9 @@ html, body {
         font-size: 10rem;
     }
 }
+
+@media (max-width: 428px) {
+    #english-name {
+        font-size: 2.5rem;
+    }
+}

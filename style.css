@@ -31,7 +31,7 @@ html, body {
     opacity: 0.0;
 }
 
-@media (max-width: 512px) {
+@media (max-width: 636px) {
     #english-name {
         font-size: 3rem;
     }

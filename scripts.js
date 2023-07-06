@@ -60,7 +60,7 @@ $(document).ready(function () {
                     mouseOver++;
                     console.log(mouseOver);
                 }
-                iteration += 1 / 3;
+                iteration += 1 / 2;
             }, 50);
         } else if (mouseOver % 4 === 2) {
             let iteration = 0;
@@ -106,7 +106,7 @@ $(document).ready(function () {
                     mouseOver++;
                     console.log(mouseOver);
                 }
-                iteration += 1 / 3;
+                iteration += 1 / 2;
             }, 50);
         }
     };

@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     let interval = null;
 
-    document.getElementById("english-name").onmouseover = event => {
+    document.getElementById("english-name").onmouseover = event => { // I think I used some redundant code which I will fix in the future :^)
         if (mouseOver % 4 === 0) {
             let iteration = 0;
 

@@ -1,6 +1,11 @@
+:root {
+    --border-color: rgb(255, 255, 255, 0.1);
+}
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -8,6 +13,26 @@ html, body {
     min-height: 100% !important;
     height: 100%;
     font-family: "Space Mono", monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #F4EEFF;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    position: absolute;
+    justify-content: center;
+    opacity: 0;
+}
+
+nav > .nav-section {
+    padding: 2rem 2rem;
+    display: flex;
+    gap: 6rem;
 }
 
 #name {

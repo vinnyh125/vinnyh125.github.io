@@ -24,6 +24,8 @@ $(document).ready(function () {
             clearInterval(interval);
             document.getElementById("chinese-name").style.opacity = "0.35";
             document.getElementById("chinese-name").style.transition = "opacity 3s";
+            document.getElementById("navbar").style.opacity = "1.0";
+            document.getElementById("navbar").style.transition = "opacity 3s";
         }
         iteration += 1 / 3;
     }, 50);

@@ -25,7 +25,9 @@ $(document).ready(function () {
             document.getElementById("chinese-name").style.opacity = "0.35";
             document.getElementById("chinese-name").style.transition = "opacity 3s";
             document.getElementById("navbar").style.opacity = "1.0";
-            document.getElementById("navbar").style.transition = "opacity 3s";
+            document.getElementById("navbar").style.transition = "opacity 2s";
+            document.getElementById("navbar").style.animationName = "slideUp";
+            document.getElementById("navbar").style.animationDuration = "1s";
         }
         iteration += 1 / 3;
     }, 50);

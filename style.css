@@ -35,6 +35,15 @@ nav > .nav-section {
     gap: 6rem;
 }
 
+@keyframes slideUp {
+    from {
+        transform: translateY(15%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
 #name {
     display: flex;
     justify-content: center;
@@ -64,10 +73,19 @@ nav > .nav-section {
     #chinese-name {
         font-size: 10rem;
     }
+
+    nav > .nav-section {
+        gap: 4rem;
+    }
 }
 
 @media (max-width: 428px) {
     #english-name {
         font-size: 2.5rem;
+    }
+
+    nav > .nav-section {
+        gap: 3rem;
+        padding: 1.5rem 1.5rem;
     }
 }

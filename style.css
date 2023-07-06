@@ -7,9 +7,10 @@ html, body {
     background-color: #424874;
     min-height: 100% !important;
     height: 100%;
+    font-family: "Space Mono", monospace;
 }
 
-#intro {
+#name {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +20,6 @@ html, body {
 #english-name {
     color: #F4EEFF;
     font-size: 5rem;
-    font-family: "Space Mono", monospace;
     z-index: 1;
 }
 

@@ -108,7 +108,7 @@ nav > .nav-section {
     }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 500px) {
     #english-name {
         font-size: 2.1rem;
     }

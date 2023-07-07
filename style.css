@@ -48,6 +48,15 @@ nav > .nav-section {
     }
 }
 
+#cover {
+    display: none;
+    background: transparent;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
 #name {
     display: flex;
     justify-content: center;

@@ -235,7 +235,101 @@ $(document).ready(function () {
                     document.getElementById("navbar").style.animationName = "slideUp";
                     document.getElementById("navbar").style.animationDuration = "1s";
                     mouseOver++;
-                    console.log(mouseOver);
+                    if (firstTime) {
+                        document.getElementById("cover").style.display = "block";
+                        document.getElementById("cover").style.top = navbarHeight + "px";
+                        setTimeout(() => {
+                            let iteration = 0;
+
+                            clearInterval(interval);
+                
+                            interval = setInterval(() => {
+                                event.target.innerText = student.split("")
+                                    .map((letter, index) => {
+                                        if (index < iteration) {
+                                            return student.split("")[index];
+                                        }
+                
+                                        return letters[Math.floor(Math.random() * 26)];
+                                    })
+                                    .join("");
+                
+                                if (iteration >= student.split("").length) {
+                                    clearInterval(interval);
+                                }
+                                iteration += 1 / 2;
+                            }, 50);
+                        }, 3000);
+                        setTimeout(() => {
+                            let iteration = 0;
+
+                            clearInterval(interval);
+                
+                            interval = setInterval(() => {
+                                event.target.innerText = music.split("")
+                                    .map((letter, index) => {
+                                        if (index < iteration) {
+                                            return music.split("")[index];
+                                        }
+                
+                                        return letters[Math.floor(Math.random() * 26)];
+                                    })
+                                    .join("");
+                
+                                if (iteration >= music.split("").length) {
+                                    clearInterval(interval);
+                                }
+                                iteration += 1 / 3;
+                            }, 50);
+                        }, 6000);
+                        setTimeout(() => {
+                            let iteration = 0;
+
+                            clearInterval(interval);
+                
+                            interval = setInterval(() => {
+                                event.target.innerText = badminton.split("")
+                                    .map((letter, index) => {
+                                        if (index < iteration) {
+                                            return badminton.split("")[index];
+                                        }
+                
+                                        return letters[Math.floor(Math.random() * 26)];
+                                    })
+                                    .join("");
+                
+                                if (iteration >= badminton.split("").length) {
+                                    clearInterval(interval);
+                                }
+                                iteration += 1 / 2;
+                            }, 50);
+                        }, 9000);
+                        setTimeout(() => {
+                            let iteration = 0;
+                            
+                            clearInterval(interval);
+
+                            interval = setInterval(() => {
+                                event.target.innerText = name.split("")
+                                    .map((letter, index) => {
+                                        if (index < iteration) {
+                                            return name.split("")[index];
+                                        }
+
+                                        return letters[Math.floor(Math.random() * 26)];
+                                    })
+                                    .join("");
+                                if (iteration >= name.split("").length) {
+                                    clearInterval(interval);
+                                }
+                                iteration += 1 / 3;
+                            }, 50);
+                        }, 12000);
+                        setTimeout(() => {
+                            document.getElementById("cover").style.display = "none";
+                        }, 14400);
+                        firstTime = false;
+                    }
                 }
                 iteration += 1 / 3;
             }, 50);
@@ -260,7 +354,7 @@ $(document).ready(function () {
                     mouseOver++;
                     console.log(mouseOver);
                 }
-                iteration += 1 / 3;
+                iteration += 1 / 2;
             }, 50);
         } else if (mouseOver % 4 === 2) {
             let iteration = 0;
@@ -306,7 +400,7 @@ $(document).ready(function () {
                     mouseOver++;
                     console.log(mouseOver);
                 }
-                iteration += 1 / 3;
+                iteration += 1 / 2;
             }, 50);
         }
     };

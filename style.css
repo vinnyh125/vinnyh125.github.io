@@ -80,6 +80,10 @@ nav > .nav-section {
     color: #A6B1E1;
     font-size: 15rem;
     opacity: 0.0;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 @media (max-width: 636px) {

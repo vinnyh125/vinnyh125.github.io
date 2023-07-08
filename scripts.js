@@ -239,6 +239,11 @@ $(document).ready(function () {
                     document.getElementById("navbar").style.transition = "opacity 2s";
                     document.getElementById("navbar").style.animationName = "slideUp";
                     document.getElementById("navbar").style.animationDuration = "1s";
+                    document.getElementById("skills-main").style.display = "block";
+                    document.getElementById("projects-main").style.display = "block";
+                    document.getElementById("about-main").style.display = "block";
+                    document.getElementById("separator-one").style.display = "block";
+                    document.getElementById("separator-two").style.display = "block";
                     mouseOver++;
                     if (firstTime) {
                         document.getElementById("cover").style.display = "block";

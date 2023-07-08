@@ -230,4 +230,21 @@ nav > .nav-section {
         gap: 3rem;
         padding: 1.5rem 1.5rem;
     }
+
+    #separator-one, #separator-two {
+        display: none !important;
+    }
+
+    #about-header, #skills-header, #projects-header {
+        font-size: 2.25rem;
+        padding-top: 10%;
+    }
+
+    #about-description, #skills-description, #projects-description {
+        font-size: 1.5rem;
+    }
+
+    #about-content, #skills-content, #projects-content {
+        scroll-margin-top: 0;
+    }
 }

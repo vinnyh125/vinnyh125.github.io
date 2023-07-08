@@ -247,4 +247,8 @@ nav > .nav-section {
     #about-content, #skills-content, #projects-content {
         scroll-margin-top: 0;
     }
+
+    #about-main, #skills-main, #projects-main {
+        height: 100%;
+    }
 }

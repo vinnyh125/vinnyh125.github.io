@@ -9,11 +9,16 @@
     touch-action: manipulation;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 html, body {
     background-color: #424874;
     min-height: 100% !important;
     height: 100%;
     font-family: "Space Mono", monospace;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -84,6 +89,113 @@ nav > .nav-section {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+}
+
+#skills-main {
+    width: 100%;
+    height: 90%;
+    background-color: #7683bd;
+    display: none;
+}
+
+#skills-content {
+    width: 100%;
+    height: 80%;
+}
+
+#skills-header {
+    display: flex;
+    justify-content: center;
+    color: #F4EEFF;
+    font-weight: bold;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    font-size: 4rem;
+}
+
+#skills-description {
+    display: flex;
+    justify-content: center;
+    color: #F4EEFF;
+    font-size: 1.75rem;
+}
+
+#separator-one {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 7.5vw solid #424874;
+    margin-top: -7.5vw;
+    display: none;
+}
+
+#projects-main {
+    width: 100%;
+    height: 80%;
+    background-color: #424874;
+    display: none;
+}
+
+#projects-content {
+    width: 100%;
+    height: 80%;
+    scroll-margin-top: 7.5vw;
+}
+
+#projects-header {
+    display: flex;
+    justify-content: center;
+    color: #F4EEFF;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-size: 4rem;
+}
+
+#projects-description {
+    display: flex;
+    justify-content: center;
+    color: #F4EEFF;
+    font-size: 1.75rem;
+}
+
+#separator-two {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 7.5vw solid #7683bd;
+    margin-top: -7.5vw;
+    display: none;
+}
+
+#about-main {
+    width: 100%;
+    height: 100%;
+    background-color: #7683bd;
+    display: none;
+}
+
+#about-content {
+    width: 100%;
+    height: 80%;
+    scroll-margin-top: 7.5vw;
+}
+
+#about-header {
+    display: flex;
+    justify-content: center;
+    color: #F4EEFF;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-size: 4rem;
+}
+
+#about-description {
+    display: flex;
+    justify-content: center;
+    color: #F4EEFF;
+    font-size: 1.75rem;
 }
 
 @media (max-width: 636px) {

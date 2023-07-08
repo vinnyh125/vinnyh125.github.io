@@ -199,6 +199,23 @@ nav > .nav-section {
     font-size: 1.75rem;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 @media (max-width: 636px) {
     #english-name {
         font-size: 3rem;

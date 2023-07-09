@@ -304,11 +304,11 @@ nav > .nav-section {
     #about-content, #skills-content, #projects-content {
         scroll-margin-top: 0;
         height: 90%;
-        min-height: 820px;
+        min-height: 830px;
     }
 
     #about-main, #skills-main, #projects-main {
         height: 100%;
-        min-height: 820px;
+        min-height: 830px;
     }
 }

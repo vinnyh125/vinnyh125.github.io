@@ -191,6 +191,18 @@ nav > .nav-section {
     font-size: 1.75rem;
 }
 
+#fu-wah-website,
+#vernacular-game {
+    padding: 2rem;
+    text-align: center;
+    flex-basis: calc(100% / 2);
+}
+
+#fu-wah-link,
+#vernacular-link {
+    color: #ff8f8f;
+}
+
 #separator-two {
     width: 0;
     height: 0;
@@ -235,8 +247,7 @@ nav > .nav-section {
 } */
 
 #about-me {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 2rem;
     width: 100%;
 }
 
@@ -329,6 +340,13 @@ nav > .nav-section {
     }
   
     #about-me {
+        font-size: 1rem;
+    }
+
+    #fu-wah-website,
+    #vernacular-game {
+        padding: 20px;
+        text-align: center;
         font-size: 1rem;
     }
 }

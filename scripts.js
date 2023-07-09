@@ -20,10 +20,10 @@ $(document).ready(function () {
             }
         });
     }, { threshold: 0.5 });
-    
-    const hiddenElements = document.querySelectorAll(".hidden");
-    hiddenElements.forEach((el) => observer.observe(el));    
 
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => observer.observe(el)); 
+    
     document.getElementById("english-name").onmouseover = event => { // I think I used some redundant code which I will fix in the future :^)
         if (mouseOver % 4 === 0) {
             let iteration = 0;

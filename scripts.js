@@ -172,7 +172,6 @@ $(document).ready(function () {
                 if (iteration >= student.split("").length) {
                     clearInterval(interval);
                     mouseOver++;
-                    console.log(mouseOver);
                 }
                 iteration += 1 / 2;
             }, 50);
@@ -195,7 +194,6 @@ $(document).ready(function () {
                 if (iteration >= music.split("").length) {
                     clearInterval(interval);
                     mouseOver++;
-                    console.log(mouseOver);
                 }
                 iteration += 1 / 3;
             }, 50);
@@ -218,7 +216,6 @@ $(document).ready(function () {
                 if (iteration >= badminton.split("").length) {
                     clearInterval(interval);
                     mouseOver++;
-                    console.log(mouseOver);
                 }
                 iteration += 1 / 2;
             }, 50);
@@ -373,7 +370,6 @@ $(document).ready(function () {
                 if (iteration >= student.split("").length) {
                     clearInterval(interval);
                     mouseOver++;
-                    console.log(mouseOver);
                 }
                 iteration += 1 / 2;
             }, 50);
@@ -396,7 +392,6 @@ $(document).ready(function () {
                 if (iteration >= music.split("").length) {
                     clearInterval(interval);
                     mouseOver++;
-                    console.log(mouseOver);
                 }
                 iteration += 1 / 3;
             }, 50);
@@ -419,7 +414,6 @@ $(document).ready(function () {
                 if (iteration >= badminton.split("").length) {
                     clearInterval(interval);
                     mouseOver++;
-                    console.log(mouseOver);
                 }
                 iteration += 1 / 2;
             }, 50);

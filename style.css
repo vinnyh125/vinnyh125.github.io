@@ -130,6 +130,9 @@ nav > .nav-section {
     margin-top: 2rem;
     display: inline-block;
     font-size: 1rem;
+    flex: 1 0 auto; /* Updated */
+    max-width: 200px; /* Added */
+    min-width: 150px; /* Added */
 }
 
 .ind-wrapper {
@@ -139,11 +142,13 @@ nav > .nav-section {
     justify-content: center;
     align-self: center;
     flex-wrap: wrap;
+    text-align: center; /* Added */
 }
 
 .skill-img {
     width: 60px;
     height: 60px;
+    margin-bottom: 0.5rem; /* Added */
 }
 
 #separator-one {
@@ -241,6 +246,13 @@ nav > .nav-section {
     }
 }
 
+@media (max-width: 768px) {
+    .ind-skill {
+      flex: 1 0 30%; /* Updated */
+      max-width: 30%; /* Updated */
+    }
+}
+
 @media (max-width: 636px) {
     #english-name {
         font-size: 3rem;
@@ -289,9 +301,11 @@ nav > .nav-section {
     #about-content, #skills-content, #projects-content {
         scroll-margin-top: 0;
         height: 90%;
+        min-height: 820px;
     }
 
     #about-main, #skills-main, #projects-main {
         height: 100%;
+        min-height: 820px;
     }
 }

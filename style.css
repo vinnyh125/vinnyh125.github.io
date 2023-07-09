@@ -144,12 +144,29 @@ nav > .nav-section {
     align-self: center;
     flex-wrap: wrap;
     text-align: center;
+    min-height: 92px;
+    height: 100%; /* Add this line */
 }
 
 .skill-img {
     width: 60px;
     height: 60px;
     margin-bottom: 0.5rem; 
+}
+
+.logo-img {
+    width: 48px;
+    height: 48px;
+}
+
+#scikit-learn-wrapper {
+    width: 100px;
+    height: 60px;
+}
+
+#scikit-learn-img {
+    width: 89px;
+    height: 48px;
 }
 
 #separator-one {

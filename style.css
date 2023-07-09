@@ -116,16 +116,41 @@ nav > .nav-section {
 
 #skills-description {
     display: flex;
-    justify-content: center;
     color: #F4EEFF;
     font-size: 1.75rem;
+}
+
+#skills-languages, #skills-tools {
+    flex-basis: calc(100% / 2);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.ind-skill {
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.ind-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.skill-img {
+    width: 60px;
+    height: 60px;
 }
 
 #separator-one {
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
-    border-bottom: 7.5vw solid #424874;
+    border-bottom: 7.5vw solid #CEEC97;
     margin-top: -7.5vw;
     display: none;
 }
@@ -133,7 +158,7 @@ nav > .nav-section {
 #projects-main {
     width: 100%;
     height: 80%;
-    background-color: #424874;
+    background-color: #CEEC97;
     display: none;
 }
 
@@ -146,7 +171,7 @@ nav > .nav-section {
 #projects-header {
     display: flex;
     justify-content: center;
-    color: #F4EEFF;
+    color: #253031;
     font-weight: bold;
     padding-top: 1%;
     padding-bottom: 2%;
@@ -156,7 +181,7 @@ nav > .nav-section {
 #projects-description {
     display: flex;
     justify-content: center;
-    color: #F4EEFF;
+    color: #253031;
     font-size: 1.75rem;
 }
 
@@ -263,6 +288,7 @@ nav > .nav-section {
 
     #about-content, #skills-content, #projects-content {
         scroll-margin-top: 0;
+        height: 90%;
     }
 
     #about-main, #skills-main, #projects-main {

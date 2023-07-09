@@ -230,6 +230,16 @@ nav > .nav-section {
     font-size: 1.75rem;
 }
 
+/* #about-image, #about-me {
+    flex-basis: calc(100% / 2);
+} */
+
+#about-me {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+}
+
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -310,5 +320,15 @@ nav > .nav-section {
     #about-main, #skills-main, #projects-main {
         height: 100%;
         min-height: 830px;
+    }
+
+    #about-image,
+    #about-me {
+        margin-top: 2rem;
+        flex-basis: 100%;
+    }
+  
+    #about-me {
+        font-size: 1rem;
     }
 }

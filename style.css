@@ -123,7 +123,7 @@ nav > .nav-section {
 #skills-languages, #skills-tools {
     flex-basis: calc(100% / 2);
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .ind-skill {
@@ -251,9 +251,11 @@ nav > .nav-section {
       flex: 1 0 30%; /* Updated */
       max-width: 30%; /* Updated */
     }
-}
-
-@media (max-width: 636px) {
+    #skills-languages, #skills-tools {
+        flex-basis: calc(100% / 2);
+        text-align: center;
+        margin-top: 2rem;
+    }
     #english-name {
         font-size: 3rem;
     }
@@ -273,9 +275,6 @@ nav > .nav-section {
     #nav-projects {
         flex-basis: calc(100% / 3);
     }
-}
-
-@media (max-width: 500px) {
     #english-name {
         font-size: 2.1rem;
     }

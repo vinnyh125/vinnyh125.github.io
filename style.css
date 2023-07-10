@@ -208,6 +208,12 @@ nav > .nav-section {
     font-size: 1.75rem;
 }
 
+.project-img {
+    width: 512px;
+    height: auto;
+    border-radius: 30px;
+}
+
 #fu-wah-website,
 #vernacular-game {
     padding: 2rem;
@@ -358,6 +364,16 @@ nav > .nav-section {
   
     #about-me {
         font-size: 1rem;
+    }
+
+    .project-img {
+        width: 300px;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    #projects-description {
+        display: block;
     }
 
     #fu-wah-website,

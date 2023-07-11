@@ -197,7 +197,7 @@ nav > .nav-section {
     color: #253031;
     font-weight: bold;
     padding-top: 1%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     font-size: 4rem;
 }
 
@@ -216,9 +216,14 @@ nav > .nav-section {
     border-radius: 30px;
 }
 
+.project-name {
+    color: #ff8f8f;
+    padding-bottom: 1rem;
+}
+
 #fu-wah-website,
 #vernacular-game {
-    padding: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     text-align: center;
     flex-basis: calc(100% / 2);
 }
@@ -226,6 +231,7 @@ nav > .nav-section {
 #fu-wah-link,
 #vernacular-link {
     color: #ff8f8f;
+    font-size: 2rem;
 }
 
 #separator-two {
@@ -301,6 +307,14 @@ nav > .nav-section {
     #projects-description {
         font-size: 1.5rem;
     }
+
+    #fu-wah-website,
+    #vernacular-game {
+        padding: 0rem 2rem 2rem 2rem;
+        text-align: center;
+        flex-basis: calc(100% / 2);
+    }
+    
 }
 
 @media (max-width: 1151px) {
@@ -399,5 +413,10 @@ nav > .nav-section {
         padding: 20px;
         text-align: center;
         font-size: 1rem;
+    }
+    #fu-wah-link,
+    #vernacular-link {
+        color: #ff8f8f;
+        font-size: 1.5rem;
     }
 }

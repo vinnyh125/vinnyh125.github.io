@@ -54,10 +54,7 @@ $(document).ready(function () {
                     document.getElementById("about-main").style.display = "block";
                     document.getElementById("separator-one").style.display = "block";
                     document.getElementById("separator-two").style.display = "block";
-                    setTimeout(() => {
-                        document.getElementById("footer").style.display = "block";
-                    }, 100);
-                    
+                    document.getElementById("footer").style.display = "block";
                     mouseOver++;
                     if (firstTime) {
                         document.getElementById("cover").style.display = "block";

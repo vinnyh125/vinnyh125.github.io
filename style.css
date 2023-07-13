@@ -451,9 +451,14 @@ footer {
         text-align: center;
         font-size: 1rem;
     }
+
     #fu-wah-link,
     #vernacular-link {
         color: #ff8f8f;
         font-size: 1.5rem;
+    }
+
+    footer {
+        display: block;
     }
 }

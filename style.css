@@ -282,6 +282,43 @@ nav > .nav-section {
     width: 100%;
 }
 
+footer {
+    display: none;
+    width: 100%;
+    background-color: #424874;
+    padding: 4rem 0;
+}
+
+#footer-arrow-up-div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-element {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+  
+.footer-element:hover {
+    transform: translateY(-5px);
+}
+
+#footer-social-media-div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#footer-social-media-div a {
+    margin: 1.8rem;
+    margin-bottom: 0;
+}
+
 .hidden {
     opacity: 0;
     filter: blur(5px);

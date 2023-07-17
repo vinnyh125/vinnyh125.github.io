@@ -70,6 +70,14 @@ nav > .nav-section {
     background-color:#424874;
 }
 
+#main-name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+}
+
 #english-name {
     color: #F4EEFF;
     font-size: 5rem;
@@ -78,6 +86,19 @@ nav > .nav-section {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+}
+
+#idle-warning {
+    color: #f4eeff;
+    opacity: 0.0;
+    font-size: 2rem;
+    z-index: 1;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    position: absolute;
+    bottom: -48px;
 }
 
 #chinese-name {
@@ -374,6 +395,10 @@ footer {
 
     #english-name {
         font-size: 3rem;
+    }
+
+    #idle-warning {
+        font-size: 1.2rem;
     }
     
     #chinese-name {

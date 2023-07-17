@@ -13,6 +13,8 @@ $(document).ready(function () {
 
     let navbarHeight = document.getElementById("navbar").offsetHeight;
 
+    let startTime = Date.now();
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -23,7 +25,21 @@ $(document).ready(function () {
 
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el)); 
-    
+
+    idleInterval = setInterval(function() {
+        let elapsedTime = Date.now() - startTime;
+
+        if (elapsedTime >= 8000) {
+            clearInterval(idleInterval);
+            let idleWarningHeight = document.getElementById("idle-warning").offsetHeight;
+            if (mouseOver === 0) {
+                document.getElementById("idle-warning").style.bottom = "-" + idleWarningHeight + "px";
+                document.getElementById("idle-warning").style.opacity = "0.5";
+                document.getElementById("idle-warning").style.transition = "opacity 1s";
+            }
+        }
+    }, 1000);
+
     document.getElementById("english-name").onmouseover = event => { // I think I used some redundant code which I will fix in the future :^)
         if (mouseOver % 4 === 0) {
             let iteration = 0;
@@ -43,6 +59,8 @@ $(document).ready(function () {
 
                 if (iteration >= name.split("").length) {
                     clearInterval(interval);
+                    document.getElementById("idle-warning").style.opacity = "0.0";
+                    document.getElementById("idle-warning").style.transition = "opacity 0.7s";
                     document.getElementById("chinese-name").style.opacity = "0.35";
                     document.getElementById("chinese-name").style.transition = "opacity 3s";
                     document.getElementById("navbar").style.opacity = "1.0";
@@ -242,6 +260,8 @@ $(document).ready(function () {
 
                 if (iteration >= name.split("").length) {
                     clearInterval(interval);
+                    document.getElementById("idle-warning").style.opacity = "0.0";
+                    document.getElementById("idle-warning").style.transition = "opacity 0.7s";
                     document.getElementById("chinese-name").style.opacity = "0.35";
                     document.getElementById("chinese-name").style.transition = "opacity 3s";
                     document.getElementById("navbar").style.opacity = "1.0";

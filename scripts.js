@@ -29,7 +29,7 @@ $(document).ready(function () {
     idleInterval = setInterval(function() {
         let elapsedTime = Date.now() - startTime;
 
-        if (elapsedTime >= 8000) {
+        if (elapsedTime >= 5000) {
             clearInterval(idleInterval);
             let idleWarningHeight = document.getElementById("idle-warning").offsetHeight;
             if (mouseOver === 0) {

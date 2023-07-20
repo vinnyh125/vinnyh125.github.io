@@ -294,13 +294,31 @@ nav > .nav-section {
     font-size: 1.75rem;
 }
 
-/* #about-image, #about-me {
+#about-image, #about-me {
     flex-basis: calc(100% / 2);
-} */
-
-#about-me {
     padding: 2rem;
     width: 100%;
+}
+
+#about-me {
+    font-size: 1.5rem;
+    padding-right: 14%;
+}
+
+#about-image {
+    padding-left: 14%;
+}
+
+#selfie-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#selfie {
+    width: 400px;
+    border-radius: 15px;
+    margin-top: 10px;
 }
 
 footer {
@@ -357,6 +375,23 @@ footer {
     }
 }
 
+@media (max-width: 1700px) {
+    #about-me {
+        font-size: 1.4rem;
+        padding-right: 8%;
+    }
+    
+    #about-image {
+        padding-left: 10%;
+    }
+
+    #projects-main {
+        width: 100%;
+        height: 100%;
+        scroll-margin-top: 7.5vw;
+    }
+}
+
 @media (max-width: 1470px) {
     #projects-header {
         padding-bottom: 1%;
@@ -372,12 +407,28 @@ footer {
         text-align: center;
         flex-basis: calc(100% / 2);
     }
+
+    #about-me {
+        font-size: 1.35rem;
+        padding-right: 8%;
+    }
     
+    #about-image {
+        padding-left: 10%;
+    }
 }
 
 @media (max-width: 1151px) {
     .project-img {
         width: 350px;
+    }
+
+    #about-me {
+        font-size: 1.2rem;
+    }
+
+    #selfie {
+        width: 320px;
     }
 }
 
@@ -452,7 +503,7 @@ footer {
 
     #about-image,
     #about-me {
-        margin-top: 2rem;
+        margin-top: 0rem;
         flex-basis: 100%;
     }
   
@@ -481,5 +532,30 @@ footer {
     #vernacular-link {
         color: #ff8f8f;
         font-size: 1.5rem;
+    }
+
+    #selfie {
+        width: 225px;
+    }
+
+    #about-description {
+        display: block;
+        color: #F4EEFF;
+        text-align: center;
+    }
+    
+    #about-image, #about-me {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0;
+        padding-bottom: 10%;
+    }
+
+    #about-main {
+        width: 100%;
+        height: fit-content;
+        background-color: #7683bd;
+        display: none;
     }
 }

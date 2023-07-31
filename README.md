@@ -1,3 +1,3 @@
-# My Portfolio Site
+# Portfolio Site
 
 Welcome to my portfolio site! I hope you enjoy! :-)

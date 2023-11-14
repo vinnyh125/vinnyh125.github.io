@@ -1,205 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<meta http-equiv='cache-control' content='no-cache'> 
-	<meta http-equiv='expires' content='0'> 
-	<meta http-equiv='pragma' content='no-cache'>
-	<meta name="description" content="Vincent's Personal Portfolio Site">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1024426012571861127/1126801956350996580/android-chrome-512x512.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-	<title>Vincent Huang</title>
-</head>
-<body>
-	<div id="cover"></div>
-	<nav id="navbar">
-		<div class="nav-section">
-			<a id="skills-anchor" href="#skills-content">SKILLS</a>
-		</div>
-		<div class="nav-section">
-			<a id="projects-anchor" href="#projects-content">PROJECTS</a>
-		</div>
-		<div class="nav-section">
-			<a id="about-anchor" href="#about-content">ABOUT</a>
-		</div>
-	</nav>
-	<div id="name">
-		<div id="main-name">
-			<h1 id="english-name" data-value="VINCENT HUANG">
-				VINCENT HUANG
-			</h1>
-			<p id="idle-warning">
-				Click/hover over me!
-			</p>
-		</div>
-		<p id="chinese-name">
-			黄毅
-		</p>	
-	</div>
-	<div id="skills-main">
-		<div id="skills-content">
-			<div id="skills-header" class="hidden">
-				SKILLS
-			</div>
-			<div id="skills-description" class="hidden">
-				<div id="skills-languages">
-					Languages<br>
-					<div class="ind-skill-wrapper">
-						<div class="ind-skill">
-							<div class="ind-wrapper">
-								<div class="skill-img">
-									<img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png?20110131171049">
-								</div>
-								HTML5
-							</div>
-						</div>
-						<div class="ind-skill">
-							<div class="ind-wrapper">
-								<div class="skill-img">
-									<img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png?20210705212817">
-								</div>
-								CSS3							
-							</div>
-						</div>
-						<div class="ind-skill">
-							<div class="ind-wrapper">
-								<div class="skill-img">
-									<img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png?20141107110902">
-								</div>
-								JavaScript							
-							</div>
-						</div>
-						<div class="ind-skill">
-							<div class="ind-wrapper">
-								<div class="skill-img">
-									<img class="logo-img" src="https://cdn2.iconfinder.com/data/icons/metro-ui-dock/512/Java.png">
-								</div>
-								Java							
-							</div>
-						</div>
-						<div class="ind-skill">
-							<div class="ind-wrapper">
-								<div class="skill-img">
-									<img class="logo-img" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png">
-								</div>
-								Python							
-							</div>
-						</div>							
-					</div>
-				</div>
-				<div id="skills-tools">
-					Tools<br>
-					<div class="ind-skill-wrapper">
-						<div class="ind-skill">
-							<div class="ind-wrapper">
-								<div class="skill-img">
-									<img class="logo-img" src="https://seeklogo.com/images/N/numpy-logo-479C24EC79-seeklogo.com.png">
-								</div>
-								NumPy
-							</div>
-						</div>
-						<div class="ind-skill">
-							<div class="ind-wrapper">
-								<div class="skill-img">
-									<img class="logo-img" src="https://cdn.discordapp.com/attachments/1024426012571861127/1127522353954443304/pandas_mark.png">
-								</div>
-								Pandas							
-							</div>
-						</div>
-						<div class="ind-skill">
-							<div class="ind-wrapper">
-								<div class="skill-img" id="scikit-learn-wrapper">
-									<img class="logo-img" id="scikit-learn-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/520px-Scikit_learn_logo_small.svg.png?20180808062052">
-								</div>
-								Scikit-learn							
-							</div>
-						</div>
-						<div class="ind-skill">
-							<div class="ind-wrapper">
-								<div class="skill-img">
-									<img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Selenium_Logo.png/1148px-Selenium_Logo.png?20200511151950">
-								</div>
-								Selenium							
-							</div>
-						</div>
-						<div class="ind-skill">
-							<div class="ind-wrapper">
-								<div class="skill-img">
-									<img class="logo-img" src="https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-png-transparent.png">
-								</div>
-								Netlify							
-							</div>
-						</div>							
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="separator-one"></div>
-	<div id="projects-main">
-		<div id="projects-content">
-			<div id="projects-header" class="hidden">
-				PROJECTS
-			</div>
-			<div id="projects-description" class="hidden">
-				<div id="fu-wah-website">
-					<div class="project-name">
-						<a id="fu-wah-link" href="https://github.com/vinnyh125/fuwah" target="_blank">Fu-Wah Chinese</a>
-					</div>
-					<a href="https://www.fuwahgarden.com/" target="_blank"><img class="project-img" src="https://media.discordapp.net/attachments/1024426012571861127/1127812288791990282/image.png?width=946&height=483"></a><br>
-					Wanting to use the skills I've learned from college, I decided to create a website for my family's Chinese restaurant.
-				</div>
-				<div id="vernacular-game">
-					<div class="project-name">
-						<a id="vernacular-link" href="https://github.com/vinnyh125/vernacular" target="_blank">Vernacular</a>
-					</div>
-					<a href="https://vernaculargame.netlify.app/" target="_blank"><img class="project-img" src="https://media.discordapp.net/attachments/1024426012571861127/1127813177741152296/image.png?width=946&height=476"></a><br>
-					Ever wonder what the daily Wordle word meant? Inspired by Wordle, I made Vernacular, which is Wordle with definitions!
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="separator-two"></div>
-	<div id="about-main">
-		<div id="about-content">
-			<div id="about-header" class="hidden">
-				ABOUT
-			</div>
-			<div id="about-description" class="hidden">
-				<div id="about-image">
-					<div id="selfie-wrapper">
-						<img id="selfie" src="img/selfie.png">
-					</div>
-				</div>
-				<div id="about-me">
-					Hi! My name is Vincent, but most people call me Vinny. I am in my second year at Cornell University,
-					pursuing a Bachelor's degree in Computer Science and a minor in Asian American Studies.<br><br>
-					At Cornell, I was previously an undergraduate researcher in the J2 Lab headed by Professor Jingjie Yeo.
-					There, I worked on software that automatically extracted polymer characteristics from academic literature.<br><br>
-					Outside of academics, I enjoy playing badminton and other racket sports with friends, playing the piano,
-					and listening to music (go stream <a href="https://open.spotify.com/track/5WaSJKCZhmRZ8Pxn1oTjA5?si=f7892d9b6fd34ddb" target="_blank">永遠のあくる日 by Ado</a>). 					
-				</div>
-			</div>
-		</div>
-	</div>
-	<footer>
-		<div id="footer-content-wrapper">
-			<div id="footer-arrow-up-div">
-				<a href="#"><img id="footer-arrow-up" class="footer-element" src="img/arrow-up.svg"></a>
-			</div>
-			<div id="footer-social-media-div">
-				<a href="https://www.linkedin.com/in/vhuang0125/" target="_blank"><img id="footer-linkedin" class="footer-element" src="img/linkedin.svg"></a>
-				<a href="https://github.com/vinnyh125" target="_blank"><img id="footer-github" class="footer-element" src="img/github.svg"></a>
-				<!-- <a target="_top" href="mailto:vincenthuang0125@gmail.com?subject=Mail from our Website"><img id="footer-email" class="footer-element" src="/img/mail.svg"></a> -->
-				<a href="https://drive.google.com/file/d/13JJQyXR74PzwZebV70QUx7bAXraPQklw/view?usp=sharing" target="_blank"><img id="footer-resume" class="footer-element" src="img/file.svg"></a>
-			</div>
-		</div>
-	</footer>
-	<script src="scripts.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="description" content="Vincent's Personal Portfolio Site" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.discordapp.com/attachments/1024426012571861127/1126801956350996580/android-chrome-512x512.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Vincent Huang</title>
+  </head>
+  <body>
+    <div id="cover"></div>
+    <nav id="navbar">
+      <div class="nav-section">
+        <a id="skills-anchor" href="#skills-content">SKILLS</a>
+      </div>
+      <div class="nav-section">
+        <a id="projects-anchor" href="#projects-content">PROJECTS</a>
+      </div>
+      <div class="nav-section">
+        <a id="about-anchor" href="#about-content">ABOUT</a>
+      </div>
+    </nav>
+    <div id="name">
+      <div id="main-name">
+        <h1 id="english-name" data-value="VINCENT HUANG">VINCENT HUANG</h1>
+        <p id="idle-warning">Click/hover over me!</p>
+      </div>
+      <p id="chinese-name">黄毅</p>
+    </div>
+    <div id="skills-main">
+      <div id="skills-content">
+        <div id="skills-header" class="hidden">SKILLS</div>
+        <div id="skills-description" class="hidden">
+          <div id="skills-languages">
+            Languages<br />
+            <div class="ind-skill-wrapper">
+              <div class="ind-skill">
+                <div class="ind-wrapper">
+                  <div class="skill-img">
+                    <img
+                      class="logo-img"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png?20110131171049"
+                    />
+                  </div>
+                  HTML5
+                </div>
+              </div>
+              <div class="ind-skill">
+                <div class="ind-wrapper">
+                  <div class="skill-img">
+                    <img
+                      class="logo-img"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png?20210705212817"
+                    />
+                  </div>
+                  CSS3
+                </div>
+              </div>
+              <div class="ind-skill">
+                <div class="ind-wrapper">
+                  <div class="skill-img">
+                    <img
+                      class="logo-img"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png?20141107110902"
+                    />
+                  </div>
+                  JavaScript
+                </div>
+              </div>
+              <div class="ind-skill">
+                <div class="ind-wrapper">
+                  <div class="skill-img">
+                    <img
+                      class="logo-img"
+                      src="https://cdn2.iconfinder.com/data/icons/metro-ui-dock/512/Java.png"
+                    />
+                  </div>
+                  Java
+                </div>
+              </div>
+              <div class="ind-skill">
+                <div class="ind-wrapper">
+                  <div class="skill-img">
+                    <img
+                      class="logo-img"
+                      src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"
+                    />
+                  </div>
+                  Python
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="skills-tools">
+            Tools<br />
+            <div class="ind-skill-wrapper">
+              <div class="ind-skill">
+                <div class="ind-wrapper">
+                  <div class="skill-img">
+                    <img
+                      class="logo-img"
+                      src="https://seeklogo.com/images/N/numpy-logo-479C24EC79-seeklogo.com.png"
+                    />
+                  </div>
+                  NumPy
+                </div>
+              </div>
+              <div class="ind-skill">
+                <div class="ind-wrapper">
+                  <div class="skill-img">
+                    <img
+                      class="logo-img"
+                      src="https://cdn.discordapp.com/attachments/1024426012571861127/1127522353954443304/pandas_mark.png"
+                    />
+                  </div>
+                  Pandas
+                </div>
+              </div>
+              <div class="ind-skill">
+                <div class="ind-wrapper">
+                  <div class="skill-img" id="scikit-learn-wrapper">
+                    <img
+                      class="logo-img"
+                      id="scikit-learn-img"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/520px-Scikit_learn_logo_small.svg.png?20180808062052"
+                    />
+                  </div>
+                  Scikit-learn
+                </div>
+              </div>
+              <div class="ind-skill">
+                <div class="ind-wrapper">
+                  <div class="skill-img">
+                    <img
+                      class="logo-img"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Selenium_Logo.png/1148px-Selenium_Logo.png?20200511151950"
+                    />
+                  </div>
+                  Selenium
+                </div>
+              </div>
+              <div class="ind-skill">
+                <div class="ind-wrapper">
+                  <div class="skill-img">
+                    <img
+                      class="logo-img"
+                      src="https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-png-transparent.png"
+                    />
+                  </div>
+                  Netlify
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="separator-one"></div>
+    <div id="projects-main">
+      <div id="projects-content">
+        <div id="projects-header" class="hidden">PROJECTS</div>
+        <div id="projects-description" class="hidden">
+          <div id="fu-wah-website">
+            <div class="project-name">
+              <a
+                id="fu-wah-link"
+                href="https://github.com/vinnyh125/fuwah"
+                target="_blank"
+                >Fu-Wah Chinese</a
+              >
+            </div>
+            <a href="https://www.fuwahgarden.com/" target="_blank"
+              ><img
+                class="project-img"
+                src="https://media.discordapp.net/attachments/1024426012571861127/1127812288791990282/image.png?width=946&height=483" /></a
+            ><br />
+            Wanting to use the skills I've learned from college, I decided to
+            create a website for my family's Chinese restaurant.
+          </div>
+          <div id="vernacular-game">
+            <div class="project-name">
+              <a
+                id="vernacular-link"
+                href="https://github.com/vinnyh125/vernacular"
+                target="_blank"
+                >Vernacular</a
+              >
+            </div>
+            <a href="https://vernaculargame.netlify.app/" target="_blank"
+              ><img
+                class="project-img"
+                src="https://media.discordapp.net/attachments/1024426012571861127/1127813177741152296/image.png?width=946&height=476" /></a
+            ><br />
+            Ever wonder what the daily Wordle word meant? Inspired by Wordle, I
+            made Vernacular, which is Wordle with definitions!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="separator-two"></div>
+    <div id="about-main">
+      <div id="about-content">
+        <div id="about-header" class="hidden">ABOUT</div>
+        <div id="about-description" class="hidden">
+          <div id="about-image">
+            <div id="selfie-wrapper">
+              <img id="selfie" src="img/selfie.png" />
+            </div>
+          </div>
+          <div id="about-me">
+            Hi! My name is Vincent, but most people call me Vinny. I am in my
+            second year at Cornell University, pursuing a Bachelor's degree in
+            Computer Science and a minor in Asian American Studies.<br /><br />
+            At Cornell, I was previously an undergraduate researcher in the J2
+            Lab headed by Professor Jingjie Yeo. There, I worked on software
+            that automatically extracted polymer characteristics from academic
+            literature.<br /><br />
+            Outside of academics, I enjoy playing badminton and other racket
+            sports with friends, playing the piano, and listening to music (go
+            stream
+            <a
+              href="https://open.spotify.com/track/5WaSJKCZhmRZ8Pxn1oTjA5?si=f7892d9b6fd34ddb"
+              target="_blank"
+              >永遠のあくる日 by Ado</a
+            >).
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="footer-content-wrapper">
+        <div id="footer-arrow-up-div">
+          <a href="#"
+            ><img
+              id="footer-arrow-up"
+              class="footer-element"
+              src="img/arrow-up.svg"
+          /></a>
+        </div>
+        <div id="footer-social-media-div">
+          <a href="https://www.linkedin.com/in/vhuang0125/" target="_blank"
+            ><img
+              id="footer-linkedin"
+              class="footer-element"
+              src="img/linkedin.svg"
+          /></a>
+          <a href="https://github.com/vinnyh125" target="_blank"
+            ><img
+              id="footer-github"
+              class="footer-element"
+              src="img/github.svg"
+          /></a>
+          <!-- <a target="_top" href="mailto:vincenthuang0125@gmail.com?subject=Mail from our Website"><img id="footer-email" class="footer-element" src="/img/mail.svg"></a> -->
+          <a
+            href="https://drive.google.com/file/d/1cxFv81JdFChs2AxSatPlq-B9ORr26UMU/view?usp=sharing"
+            target="_blank"
+            ><img id="footer-resume" class="footer-element" src="img/file.svg"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
 </html>

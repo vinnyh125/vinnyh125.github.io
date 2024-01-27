@@ -238,7 +238,7 @@ nav > .nav-section {
 }
 
 .project-name {
-    color: #ff8f8f;
+    color: black;
     padding-bottom: 1rem;
 }
 
@@ -251,7 +251,7 @@ nav > .nav-section {
 
 #fu-wah-link,
 #vernacular-link {
-    color: #ff8f8f;
+    color: black;
     font-size: 2rem;
 }
 

@@ -1,7 +1,7 @@
 $(document).ready(function () {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const name = "VINCENT HUANG";
-    const student = "CORNELL STUDENT";
+    const student = "CS @ CORNELL";
     const music = "MUSIC LOVER";
     const badminton = "BADMINTON PLAYER";
 

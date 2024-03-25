@@ -201,14 +201,15 @@ nav > .nav-section {
 
 #projects-main {
     width: 100%;
-    height: 85%;
+    height: fit-content;
+    padding-bottom: 10%;
     background-color: #CEEC97;
     display: none;
 }
 
 #projects-content {
     width: 100%;
-    height: 80%;
+    height: fit-content;
     scroll-margin-top: 7.5vw;
 }
 
@@ -242,15 +243,13 @@ nav > .nav-section {
     padding-bottom: 1rem;
 }
 
-#fu-wah-website,
-#vernacular-game {
+#ind-proj {
     padding: 1rem 2rem 2rem 2rem;
     text-align: center;
     flex-basis: calc(100% / 2);
 }
 
-#fu-wah-link,
-#vernacular-link {
+#project-link {
     color: black;
     font-size: 2rem;
 }
@@ -387,7 +386,7 @@ footer {
 
     #projects-main {
         width: 100%;
-        height: 100%;
+        height: fit-content;
         scroll-margin-top: 7.5vw;
     }
 }
@@ -401,8 +400,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    #fu-wah-website,
-    #vernacular-game {
+    #ind-proj {
         padding: 0rem 2rem 2rem 2rem;
         text-align: center;
         flex-basis: calc(100% / 2);
@@ -492,13 +490,16 @@ footer {
 
     #about-content, #skills-content, #projects-content {
         scroll-margin-top: 0;
-        height: 90%;
+        height: fit-content;
         min-height: 830px;
     }
 
     #about-main, #skills-main, #projects-main {
-        height: 100%;
+        height: fit-content;
         min-height: 830px;
+    }
+    #skills-main {
+        padding-bottom: 37.5px;
     }
 
     #about-image,
@@ -521,16 +522,14 @@ footer {
         display: block;
     }
 
-    #fu-wah-website,
-    #vernacular-game {
+    #ind-proj {
         padding: 20px;
         text-align: center;
         font-size: 1rem;
     }
 
-    #fu-wah-link,
-    #vernacular-link {
-        color: #ff8f8f;
+    #project-link {
+        color: black;
         font-size: 1.5rem;
     }
 

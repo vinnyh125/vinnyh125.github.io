@@ -29,7 +29,7 @@ $(document).ready(function () {
     idleInterval = setInterval(function() {
         let elapsedTime = Date.now() - startTime;
 
-        if (elapsedTime >= 5000) {
+        if (elapsedTime >= 3000) {
             clearInterval(idleInterval);
             let idleWarningHeight = document.getElementById("idle-warning").offsetHeight;
             if (mouseOver === 0) {
@@ -98,7 +98,7 @@ $(document).ready(function () {
                                 }
                                 iteration += 1 / 2;
                             }, 50);
-                        }, 3000);
+                        }, 2500);
                         setTimeout(() => {
                             let iteration = 0;
 
@@ -120,7 +120,7 @@ $(document).ready(function () {
                                 }
                                 iteration += 1 / 3;
                             }, 50);
-                        }, 6000);
+                        }, 5000);
                         setTimeout(() => {
                             let iteration = 0;
 
@@ -142,7 +142,7 @@ $(document).ready(function () {
                                 }
                                 iteration += 1 / 2;
                             }, 50);
-                        }, 9000);
+                        }, 7500);
                         setTimeout(() => {
                             let iteration = 0;
                             
@@ -163,10 +163,10 @@ $(document).ready(function () {
                                 }
                                 iteration += 1 / 3;
                             }, 50);
-                        }, 12000);
+                        }, 10000);
                         setTimeout(() => {
                             document.getElementById("cover").style.display = "none";
-                        }, 14400);
+                        }, 12500);
                         firstTime = false;
                     }
                 }
@@ -299,7 +299,7 @@ $(document).ready(function () {
                                 }
                                 iteration += 1 / 2;
                             }, 50);
-                        }, 3000);
+                        }, 2500);
                         setTimeout(() => {
                             let iteration = 0;
 
@@ -321,7 +321,7 @@ $(document).ready(function () {
                                 }
                                 iteration += 1 / 3;
                             }, 50);
-                        }, 6000);
+                        }, 5000);
                         setTimeout(() => {
                             let iteration = 0;
 
@@ -343,7 +343,7 @@ $(document).ready(function () {
                                 }
                                 iteration += 1 / 2;
                             }, 50);
-                        }, 9000);
+                        }, 7500);
                         setTimeout(() => {
                             let iteration = 0;
                             
@@ -364,10 +364,10 @@ $(document).ready(function () {
                                 }
                                 iteration += 1 / 3;
                             }, 50);
-                        }, 12000);
+                        }, 10000);
                         setTimeout(() => {
                             document.getElementById("cover").style.display = "none";
-                        }, 14400);
+                        }, 12500);
                         firstTime = false;
                     }
                 }

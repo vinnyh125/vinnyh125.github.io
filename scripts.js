@@ -21,7 +21,7 @@ $(document).ready(function () {
                 entry.target.classList.add("show");
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.4 });
 
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el)); 

@@ -436,6 +436,11 @@ footer {
       max-width: 30%; 
     }
 
+    .ind-proj-blurb {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
     #skills-languages, #skills-tools {
         flex-basis: calc(100% / 2);
         text-align: center;

@@ -289,6 +289,7 @@ nav > .nav-section {
 #about-description {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #F4EEFF;
     font-size: 1.75rem;
 }

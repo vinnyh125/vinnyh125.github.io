@@ -1,5 +1,52 @@
 ---
+// src/components/Footer.astro
 ---
-<footer id="contact" class="border-t border-border py-12 px-6">
-  <p class="text-muted text-center text-xs">Contact — coming soon</p>
+
+<footer
+  id="contact"
+  class="border-t border-border mt-12 py-12 px-6"
+>
+  <div class="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+    <p class="text-xs text-muted tracking-widest uppercase">Vincent Huang</p>
+
+    <div class="flex items-center gap-6">
+      <a
+        href="https://github.com/vinnyh125"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-xs text-muted hover:text-text transition-colors duration-200 tracking-widest uppercase"
+      >
+        GitHub
+      </a>
+      <a
+        href="https://www.linkedin.com/in/vinny-huang/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-xs text-muted hover:text-text transition-colors duration-200 tracking-widest uppercase"
+      >
+        LinkedIn
+      </a>
+      <a
+        href="mailto:vh222@cornell.edu"
+        class="text-xs text-muted hover:text-text transition-colors duration-200 tracking-widest uppercase"
+      >
+        Email
+      </a>
+      <a
+        href="https://drive.google.com/file/d/18gIneW-Hn-GyQI5EaESbNuw77jwel6DV/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-xs text-muted hover:text-text transition-colors duration-200 tracking-widest uppercase"
+      >
+        Resume
+      </a>
+    </div>
+
+    <a
+      href="#hero"
+      class="text-xs text-muted hover:text-text transition-colors duration-200 tracking-widest uppercase"
+    >
+      ↑ Top
+    </a>
+  </div>
 </footer>

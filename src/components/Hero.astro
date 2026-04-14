@@ -141,7 +141,10 @@ import IsometricPC from './IsometricPC.astro';
     onComplete: startParallax,
   }, '+=100');
 
+  let parallaxStarted = false;
   function startParallax() {
+    if (parallaxStarted) return;
+    parallaxStarted = true;
     const hero = document.getElementById('hero') as HTMLElement;
     const pcWrapper = document.getElementById('pc-wrapper') as HTMLElement;
     if (!hero || !pcWrapper) return;

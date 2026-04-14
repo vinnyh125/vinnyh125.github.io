@@ -1,0 +1,180 @@
+---
+// src/components/IsometricPC.astro
+---
+
+<svg
+  id="iso-pc"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 600 480"
+  aria-hidden="true"
+  class="w-full h-full"
+>
+  <!-- ===================== CASE BODY ===================== -->
+  <g id="pc-case" style="opacity:0">
+    <!-- Top face -->
+    <polygon
+      points="300,306 397,362 319,407 222,351"
+      fill="#111111" stroke="#2a2a2a" stroke-width="1.5"
+    />
+    <!-- Front face (y=0 plane, facing viewer) -->
+    <polygon
+      points="300,360 397,416 397,362 300,306"
+      fill="#0e0e0e" stroke="#2a2a2a" stroke-width="1.5"
+    />
+    <!-- Right face (x=2.5 plane) -->
+    <polygon
+      points="397,416 319,461 319,407 397,362"
+      fill="#0d0d0d" stroke="#2a2a2a" stroke-width="1.5"
+    />
+    <!-- Front face details: power button -->
+    <circle cx="384" cy="378" r="4" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="384" cy="378" r="1.5" fill="#1e1e1e"/>
+    <!-- Front face details: USB-C ports -->
+    <rect x="308" y="383" width="11" height="7" rx="2" fill="none" stroke="#2e2e2e" stroke-width="0.75"/>
+    <rect x="323" y="383" width="11" height="7" rx="2" fill="none" stroke="#2e2e2e" stroke-width="0.75"/>
+    <!-- Right face vent lines -->
+    <line x1="325" y1="424" x2="393" y2="386" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="325" y1="432" x2="393" y2="394" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="325" y1="440" x2="393" y2="402" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="325" y1="448" x2="393" y2="410" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="325" y1="456" x2="350" y2="443" stroke="#1a1a1a" stroke-width="1"/>
+  </g>
+
+  <!-- ===================== MOTHERBOARD ===================== -->
+  <!-- Flat PCB on the top face, slightly inset -->
+  <g id="pc-motherboard" style="opacity:0">
+    <polygon
+      points="307,311 390,359 315,402 230,356"
+      fill="#080e08" stroke="#1a2a1a" stroke-width="1"
+    />
+    <!-- PCB trace lines (horizontal + diagonal) -->
+    <line x1="318" y1="340" x2="372" y2="370" stroke="#0f1f0f" stroke-width="0.75"/>
+    <line x1="315" y1="352" x2="360" y2="377" stroke="#0f1f0f" stroke-width="0.75"/>
+    <line x1="330" y1="358" x2="380" y2="385" stroke="#0f1f0f" stroke-width="0.75"/>
+    <!-- PCB mounting holes -->
+    <circle cx="315" cy="320" r="2" fill="none" stroke="#152515" stroke-width="0.75"/>
+    <circle cx="382" cy="362" r="2" fill="none" stroke="#152515" stroke-width="0.75"/>
+    <circle cx="237" cy="360" r="2" fill="none" stroke="#152515" stroke-width="0.75"/>
+    <circle cx="309" cy="395" r="2" fill="none" stroke="#152515" stroke-width="0.75"/>
+  </g>
+
+  <!-- ===================== SSD ===================== -->
+  <!-- M.2 NVMe card — lower-right area of motherboard -->
+  <g id="pc-ssd" style="opacity:0">
+    <!-- SSD top face -->
+    <polygon
+      points="354,377 383,394 372,401 343,384"
+      fill="#141414" stroke="#2a2a2a" stroke-width="1"
+    />
+    <!-- SSD front edge -->
+    <polygon
+      points="354,377 383,394 383,390 354,373"
+      fill="#0f0f0f" stroke="#222" stroke-width="0.75"
+    />
+    <!-- NAND chip rectangles -->
+    <polygon points="360,380 372,387 370,389 358,382" fill="#0a0a0a" stroke="#1e1e1e" stroke-width="0.5"/>
+    <polygon points="374,388 382,392 380,394 372,390" fill="#0a0a0a" stroke="#1e1e1e" stroke-width="0.5"/>
+  </g>
+
+  <!-- ===================== RAM STICK A ===================== -->
+  <!-- Standing RAM stick, center-right of board -->
+  <g id="pc-ram-a" style="opacity:0">
+    <!-- RAM top edge -->
+    <polygon
+      points="337,318 352,327 352,322 337,313"
+      fill="#111" stroke="#2a2a2a" stroke-width="1"
+    />
+    <!-- RAM front face (tall side facing viewer) -->
+    <polygon
+      points="337,313 352,322 352,345 337,336"
+      fill="#0e0e0e" stroke="#2a2a2a" stroke-width="1"
+    />
+    <!-- RAM right face -->
+    <polygon
+      points="352,322 352,345 352,345 352,322"
+      fill="#0c0c0c" stroke="#222" stroke-width="0.5"
+    />
+    <!-- RAM chip detail lines -->
+    <line x1="340" y1="322" x2="340" y2="342" stroke="#1e1e1e" stroke-width="0.5"/>
+    <line x1="344" y1="324" x2="344" y2="344" stroke="#1e1e1e" stroke-width="0.5"/>
+    <line x1="348" y1="326" x2="348" y2="346" stroke="#1e1e1e" stroke-width="0.5"/>
+    <!-- RAM connector notch -->
+    <rect x="337" y="340" width="4" height="4" rx="0" fill="#0a0a0a"/>
+  </g>
+
+  <!-- ===================== RAM STICK B ===================== -->
+  <!-- Second RAM stick, parallel to first, offset by ~12px isometrically -->
+  <g id="pc-ram-b" style="opacity:0">
+    <!-- RAM top edge -->
+    <polygon
+      points="325,325 340,334 340,329 325,320"
+      fill="#111" stroke="#2a2a2a" stroke-width="1"
+    />
+    <!-- RAM front face -->
+    <polygon
+      points="325,320 340,329 340,352 325,343"
+      fill="#0e0e0e" stroke="#2a2a2a" stroke-width="1"
+    />
+    <!-- RAM chip detail lines -->
+    <line x1="328" y1="329" x2="328" y2="349" stroke="#1e1e1e" stroke-width="0.5"/>
+    <line x1="332" y1="331" x2="332" y2="351" stroke="#1e1e1e" stroke-width="0.5"/>
+    <line x1="336" y1="333" x2="336" y2="353" stroke="#1e1e1e" stroke-width="0.5"/>
+    <rect x="325" y="347" width="4" height="4" rx="0" fill="#0a0a0a"/>
+  </g>
+
+  <!-- ===================== CPU + HEATSINK ===================== -->
+  <!-- CPU die + heatsink fins, upper-left area of motherboard -->
+  <g id="pc-cpu" style="opacity:0">
+    <!-- CPU IHS (top) -->
+    <polygon
+      points="248,334 278,351 268,363 238,346"
+      fill="#1a1a1a" stroke="#333" stroke-width="1"
+    />
+    <!-- CPU front edge -->
+    <polygon
+      points="248,334 278,351 278,347 248,330"
+      fill="#141414" stroke="#2a2a2a" stroke-width="0.75"
+    />
+    <!-- Heatsink fins (6 vertical fins rising above CPU) -->
+    <line x1="250" y1="334" x2="248" y2="314" stroke="#2e2e2e" stroke-width="2"/>
+    <line x1="255" y1="337" x2="253" y2="317" stroke="#2e2e2e" stroke-width="2"/>
+    <line x1="260" y1="340" x2="258" y2="320" stroke="#2e2e2e" stroke-width="2"/>
+    <line x1="265" y1="343" x2="263" y2="323" stroke="#2e2e2e" stroke-width="2"/>
+    <line x1="270" y1="346" x2="268" y2="326" stroke="#2e2e2e" stroke-width="2"/>
+    <line x1="275" y1="349" x2="273" y2="329" stroke="#2e2e2e" stroke-width="2"/>
+    <!-- Heatsink top bar connecting fins -->
+    <line x1="248" y1="314" x2="273" y2="329" stroke="#2a2a2a" stroke-width="1.5"/>
+    <line x1="248" y1="317" x2="273" y2="332" stroke="#1e1e1e" stroke-width="1"/>
+  </g>
+
+  <!-- ===================== GPU ===================== -->
+  <!-- Full-length GPU card — laid horizontally on the right side of the board -->
+  <g id="pc-gpu" style="opacity:0">
+    <!-- GPU PCB top face -->
+    <polygon
+      points="296,358 385,406 375,413 286,365"
+      fill="#141414" stroke="#2a2a2a" stroke-width="1"
+    />
+    <!-- GPU PCB front edge (thickness) -->
+    <polygon
+      points="296,358 385,406 385,402 296,354"
+      fill="#111" stroke="#222" stroke-width="0.75"
+    />
+    <!-- GPU fan shroud A (large circle, left) -->
+    <ellipse cx="320" cy="370" rx="12" ry="7" fill="none" stroke="#222" stroke-width="1"/>
+    <ellipse cx="320" cy="370" rx="5" ry="3" fill="none" stroke="#1e1e1e" stroke-width="0.75"/>
+    <!-- GPU fan shroud B (large circle, right) -->
+    <ellipse cx="355" cy="389" rx="11" ry="6" fill="none" stroke="#222" stroke-width="1"/>
+    <ellipse cx="355" cy="389" rx="4" ry="2.5" fill="none" stroke="#1e1e1e" stroke-width="0.75"/>
+    <!-- GPU PCIe bracket -->
+    <polygon
+      points="383,404 390,408 390,396 383,392"
+      fill="#0f0f0f" stroke="#222" stroke-width="0.75"
+    />
+    <!-- GPU display outputs (3 small rectangles on bracket) -->
+    <rect x="384" y="397" width="4" height="2.5" rx="0.5" fill="#0a0a0a" stroke="#1e1e1e" stroke-width="0.5"/>
+    <rect x="384" y="401" width="4" height="2.5" rx="0.5" fill="#0a0a0a" stroke="#1e1e1e" stroke-width="0.5"/>
+    <rect x="384" y="405" width="4" height="2.5" rx="0.5" fill="#0a0a0a" stroke="#1e1e1e" stroke-width="0.5"/>
+  </g>
+
+</svg>

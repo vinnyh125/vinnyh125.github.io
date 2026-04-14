@@ -26,5 +26,24 @@ const links = [
 </nav>
 
 <script>
-  // Active nav link tracking — implemented in Task 12
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('[data-nav-link]');
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach((link) => {
+            const isActive = link.getAttribute('data-nav-link') === id;
+            link.classList.toggle('text-text', isActive);
+            link.classList.toggle('text-muted', !isActive);
+          });
+        }
+      });
+    },
+    { rootMargin: '-40% 0px -55% 0px' }
+  );
+
+  sections.forEach((section) => sectionObserver.observe(section));
 </script>

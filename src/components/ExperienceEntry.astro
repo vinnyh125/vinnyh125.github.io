@@ -1,0 +1,52 @@
+---
+// src/components/ExperienceEntry.astro
+export interface Props {
+  company: string;
+  role: string;
+  period: string;
+  location: string;
+  bullets: string[];
+  link?: string;
+}
+const { company, role, period, location, bullets, link } = Astro.props;
+---
+
+<div class="grid grid-cols-[1px_1fr] gap-x-8" data-reveal>
+  <!-- Timeline line + dot -->
+  <div class="flex flex-col items-center">
+    <div class="w-px h-3 bg-border"></div>
+    <div class="w-2 h-2 rounded-full bg-muted flex-shrink-0"></div>
+    <div class="w-px flex-1 bg-border"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="pb-10">
+    <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+      {link ? (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-bold text-text hover:text-muted transition-colors duration-200"
+        >
+          {company}
+        </a>
+      ) : (
+        <span class="font-bold text-text">{company}</span>
+      )}
+      <span class="text-xs text-muted tracking-wider">{period}</span>
+    </div>
+    <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+      <span class="text-sm text-muted italic">{role}</span>
+      <span class="text-xs text-muted">{location}</span>
+    </div>
+    <ul class="space-y-1.5">
+      {bullets.map((bullet) => (
+        <li class="text-sm text-muted leading-relaxed flex gap-2">
+          <span class="text-border mt-1 flex-shrink-0">—</span>
+          <span>{bullet}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>

@@ -21,6 +21,7 @@ const { name, stack, bullets, github, live } = Astro.props;
         href={github}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={`View ${name} on GitHub`}
         class="text-xs text-muted hover:text-text transition-colors duration-200 tracking-wider uppercase"
       >
         GitHub
@@ -30,6 +31,7 @@ const { name, stack, bullets, github, live } = Astro.props;
           href={live}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`View ${name} live`}
           class="text-xs text-muted hover:text-text transition-colors duration-200 tracking-wider uppercase"
         >
           Live ↗

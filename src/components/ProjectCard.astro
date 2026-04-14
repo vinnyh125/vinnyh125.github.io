@@ -1,0 +1,57 @@
+---
+// src/components/ProjectCard.astro
+export interface Props {
+  name: string;
+  stack: string[];
+  bullets: string[];
+  github: string;
+  live?: string;
+}
+const { name, stack, bullets, github, live } = Astro.props;
+---
+
+<div
+  class="border border-border bg-surface p-6 flex flex-col gap-4 hover:border-muted transition-colors duration-300"
+  data-reveal
+>
+  <div class="flex items-start justify-between gap-4">
+    <h3 class="font-bold text-text">{name}</h3>
+    <div class="flex gap-3 flex-shrink-0">
+      <a
+        href={github}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-xs text-muted hover:text-text transition-colors duration-200 tracking-wider uppercase"
+      >
+        GitHub
+      </a>
+      {live && (
+        <a
+          href={live}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-xs text-muted hover:text-text transition-colors duration-200 tracking-wider uppercase"
+        >
+          Live ↗
+        </a>
+      )}
+    </div>
+  </div>
+
+  <div class="flex flex-wrap gap-2">
+    {stack.map((tech) => (
+      <span class="text-xs text-muted border border-border px-2 py-0.5 tracking-wide">
+        {tech}
+      </span>
+    ))}
+  </div>
+
+  <ul class="space-y-1.5 flex-1">
+    {bullets.map((bullet) => (
+      <li class="text-sm text-muted leading-relaxed flex gap-2">
+        <span class="text-border mt-1 flex-shrink-0">—</span>
+        <span>{bullet}</span>
+      </li>
+    ))}
+  </ul>
+</div>

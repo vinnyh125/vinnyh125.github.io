@@ -27,6 +27,7 @@ const { company, role, period, location, bullets, link } = Astro.props;
           href={link}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`Visit ${company}`}
           class="font-bold text-text hover:text-muted transition-colors duration-200"
         >
           {company}

@@ -81,3 +81,96 @@ import IsometricPC from './IsometricPC.astro';
     </a>
   </div>
 </section>
+
+<script>
+  import { createTimeline, stagger } from 'animejs';
+
+  const tl = createTimeline({ autoplay: true, defaults: { ease: 'easeOutExpo' } });
+
+  // Step 1: Case body
+  tl.add('#pc-case', {
+    opacity: [0, 1],
+    scale: [0.85, 1],
+    duration: 700,
+  });
+
+  // Step 2: Motherboard
+  tl.add('#pc-motherboard', {
+    opacity: [0, 1],
+    translateY: [30, 0],
+    duration: 500,
+  }, '-=400');
+
+  // Step 3: CPU
+  tl.add('#pc-cpu', {
+    opacity: [0, 1],
+    translateY: [-25, 0],
+    duration: 400,
+  }, '-=200');
+
+  // Step 4: RAM sticks staggered
+  tl.add(['#pc-ram-a', '#pc-ram-b'], {
+    opacity: [0, 1],
+    translateX: [25, 0],
+    duration: 400,
+    ease: 'easeOutElastic(1, 0.6)',
+    delay: stagger(80),
+  }, '-=150');
+
+  // Step 5: GPU
+  tl.add('#pc-gpu', {
+    opacity: [0, 1],
+    translateX: [-35, 0],
+    duration: 450,
+  }, '-=200');
+
+  // Step 6: SSD
+  tl.add('#pc-ssd', {
+    opacity: [0, 1],
+    translateY: [20, 0],
+    duration: 350,
+  }, '-=300');
+
+  // Step 7: Text reveal + start parallax after
+  tl.add(['#hero-greeting', '#hero-name', '#hero-subtitle', '#hero-links', '#hero-arrow'], {
+    opacity: [0, 1],
+    translateY: [8, 0],
+    duration: 600,
+    ease: 'easeOutQuad',
+    delay: stagger(80),
+    onComplete: startParallax,
+  }, '+=100');
+
+  function startParallax() {
+    const hero = document.getElementById('hero') as HTMLElement;
+    const pcWrapper = document.getElementById('pc-wrapper') as HTMLElement;
+    if (!hero || !pcWrapper) return;
+
+    const MAX_X = 20;
+    const MAX_Y = 10;
+    const LERP = 0.08;
+
+    let targetX = 0, targetY = 0;
+    let currentX = 0, currentY = 0;
+
+    hero.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = hero.getBoundingClientRect();
+      targetX = ((e.clientX - rect.left) / rect.width  - 0.5) * MAX_X * 2;
+      targetY = ((e.clientY - rect.top)  / rect.height - 0.5) * MAX_Y * 2;
+    });
+
+    hero.addEventListener('mouseleave', () => {
+      targetX = 0;
+      targetY = 0;
+    });
+
+    function tick() {
+      currentX += (targetX - currentX) * LERP;
+      currentY += (targetY - currentY) * LERP;
+      pcWrapper.style.transform = `translate(${currentX}px, ${currentY}px)`;
+      requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+  }
+</script>

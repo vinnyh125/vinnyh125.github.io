@@ -38,8 +38,33 @@ a {
   transform: translateY(0);
 }
 
+::selection {
+  background-color: #ff6a00;
+  color: #0a0a0a;
+}
+
+/* Hero text — hidden (only when JS runs) until the PC boots */
+.js [data-hero-text] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+
+.js [data-hero-text].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Soften the canvas edges into the page background */
+#pc-stage canvas {
+  -webkit-mask-image: radial-gradient(closest-side, #000 72%, transparent 100%);
+  mask-image: radial-gradient(closest-side, #000 72%, transparent 100%);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  [data-reveal] {
+  [data-reveal],
+  .js [data-hero-text] {
     transition: none;
     opacity: 1;
     transform: none;

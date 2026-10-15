@@ -68,7 +68,7 @@ const links = [
           const id = entry.target.id;
           navLinks.forEach((link) => {
             const isActive = link.getAttribute('data-nav-link') === id;
-            link.classList.toggle('text-text', isActive);
+            link.classList.toggle('text-accent', isActive);
             link.classList.toggle('text-muted', !isActive);
           });
         }

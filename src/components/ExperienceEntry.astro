@@ -15,7 +15,7 @@ const { company, role, period, location, bullets, link } = Astro.props;
   <!-- Timeline line + dot -->
   <div class="flex flex-col items-center">
     <div class="w-px h-3 bg-border"></div>
-    <div class="w-2 h-2 rounded-full bg-muted flex-shrink-0"></div>
+    <div class="w-2 h-2 rounded-full bg-accent flex-shrink-0"></div>
     <div class="w-px flex-1 bg-border"></div>
   </div>
 
@@ -28,7 +28,7 @@ const { company, role, period, location, bullets, link } = Astro.props;
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Visit ${company}`}
-          class="font-bold text-text hover:text-muted transition-colors duration-200"
+          class="font-bold text-text hover:text-accent transition-colors duration-200"
         >
           {company}
         </a>

@@ -9,6 +9,7 @@ export default {
         border:  '#1f1f1f',
         text:    '#f0f0f0',
         muted:   '#666666',
+        accent:  '#ff6a00',
       },
       fontFamily: {
         mono: ['"Space Mono"', 'monospace'],
